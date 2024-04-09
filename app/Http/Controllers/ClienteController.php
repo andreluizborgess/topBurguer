@@ -5,9 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Cliente;
 use Illuminate\Http\Request;
 
-class cadastroClientesController extends Controller
+class ClienteController extends Controller
 {
-    
     public function cadastro()
     {
         $clientes = Cliente::all();
