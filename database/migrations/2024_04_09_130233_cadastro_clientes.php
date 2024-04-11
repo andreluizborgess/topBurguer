@@ -11,10 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('cadastro_clientes', function (Blueprint $table) {
+        Schema::create('clientes', function (Blueprint $table) {
             $table->id();
             $table->string('nome',80)->nullable(false);
-            $table->decimal('telefone',10,2)->nullable(false);
+            $table->string('telefone')->nullable(false);
             $table->text('endereco')->nullable(false);
             $table->string('email')->nullable(false);
             $table->string('password')->nullable(false);
